@@ -2,8 +2,6 @@
 
 <div align="center">
 
-[![SASS](https://img.shields.io/badge/SASS-Style-pink?style=for-the-badge&logo=sass)](https://sass-lang.com/)
-[![HTML5](https://img.shields.io/badge/HTML5-Structure-orange?style=for-the-badge&logo=html5)](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 [![Status](https://img.shields.io/badge/Status-Finalizado-blue)]()
 
 </div>
