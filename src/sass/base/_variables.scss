@@ -1,0 +1,149 @@
+// == PALETA CORES ==
+// Escala Neutra (Grayscale/Origamid)
+$white: #ffffff;
+$black: #000000;
+$gray-100: #f5f5f5;
+$gray-200: #f0f0f0;
+$gray-300: #e0e0e0;
+$gray-400: #cccccc;
+$gray-500: #b8b8b8;
+$gray-600: #a3a3a3;
+$gray-700: #8f8f8f;
+$gray-800: #7a7a7a;
+$gray-900: #666666;
+$gray-1000: #525252;
+$gray-1100: #3d3d3d;
+$gray-1200: #292929;
+$gray-1300: #141414;
+
+// Escala Padrão (Alterar conforme o projeto)
+$primary: #007bff;
+$secondary: #6c757d;
+$success: #28a745;
+$warning: #ffc107;
+$danger: #dc3545;
+$info: #17a2b8;
+
+// == TIPOGRAFIA ==
+$font-reset: 62.5%; // 1rem = 10px
+
+// Tamanhos (Font Sizes)
+$font-10: 1rem;
+$font-12: 1.2rem;
+$font-14: 1.4rem;
+$font-16: 1.6rem;
+$font-18: 1.8rem;
+$font-20: 2rem;
+$font-22: 2.2rem;
+$font-24: 2.4rem;
+$font-32: 3.2rem;
+$font-40: 4rem;
+$font-48: 4.8rem;
+$font-64: 6.4rem;
+$font-80: 8rem;
+$font-128: 12.8rem;
+$font-144: 14.4rem;
+
+// Pesos (Font Weights)
+$weight-300: 300; // light
+$weight-400: 400; // regular
+$weight-500: 500; // medium
+$weight-600: 600; // semibold
+$weight-700: 700; // bold
+$weight-900: 900; // black
+
+// Altura de Linha (Line Heights)
+$lh-none: 1;
+$lh-tight: 1.25; // Títulos
+$lh-normal: 1.5; // Texto corrido
+$lh-relaxed: 1.8; // Grande legibilidade
+
+// == ESPAÇAMENTO (BASE 8) ==
+$space-0: 0;
+$space-xs: 0.4rem; // 4px
+$space-1: 0.8rem; // 8px
+$space-2: 1.6rem; // 16px
+$space-3: 2.4rem; // 24px
+$space-4: 3.2rem; // 32px
+$space-5: 4rem; // 40px
+$space-6: 4.8rem; // 48px
+$space-7: 5.6rem; // 56px
+$space-8: 6.4rem; // 64px
+$space-9: 7.2rem; // 72px
+$space-10: 8rem; // 80px
+$space-11: 8.8rem; // 88px
+$space-12: 9.6rem; // 96px
+$space-16: 12.8rem; // 128px
+
+// Configurações de Layout (Gutter e Section)
+$gutter: $space-3;
+$section-pad: $space-8;
+$container: 120rem; // 1200px
+
+// == ARREDONDAMENTO (BORDER RADIUS) ==
+$radius-2xs: 0.2rem; // 2px
+$radius-xs: 0.4rem; // 4px
+$radius-sm: 0.6rem; // 6px
+$radius-md: 0.8rem; // 8px
+$radius-lg: 1.2rem; // 12px
+$radius-xl: 1.6rem; // 16px
+$radius-2xl: 2.4rem; // 24px
+$radius-3xl: 3.2rem; // 32px
+$radius-full: 9999px; // Para botões pílula ou fotos circulares
+
+// == SOMBRAS (SHADOWS) ==
+$shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+$shadow-md:
+  0 4px 6px -1px rgba(0, 0, 0, 0.1),
+  0 2px 4px -1px rgba(0, 0, 0, 0.06);
+$shadow-lg:
+  0 10px 15px -3px rgba(0, 0, 0, 0.1),
+  0 4px 6px -2px rgba(0, 0, 0, 0.05);
+$shadow-xl:
+  0 20px 25px -5px rgba(0, 0, 0, 0.1),
+  0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+// == TRANSIÇÕES ==
+// Duração
+$duration-fastest: 0.1s; // Feedback instantâneo (ex: cliques)
+$duration-fast: 0.2s; // Padrão para hover de botões
+$duration-normal: 0.3s; // Padrão para menus e dropdowns
+$duration-slow: 0.5s; // Abertura de modais ou expansão de cards
+$duration-slower: 0.8s; // Transições de página ou efeitos artísticos
+$duration-slowest: 1.2s; // Efeitos de fade-in de fundo
+
+// Curvas (Easings)
+$ease-standard: ease-in-out;
+$ease-in: cubic-bezier(0.4, 0, 1, 1); // Bom para saídas (elementos sumindo)
+$ease-out: cubic-bezier(0, 0, 0.2, 1); // Bom para entradas (elementos chegando)
+$ease-back: cubic-bezier(0.34, 1.56, 0.64, 1); // Efeito "elástico" (premium)
+
+// == Z-INDEX ==
+$z-back: -10;
+$z-normal: 1;
+$z-header: 100;
+$z-modal: 1000;
+$z-tooltip: 1100;
+
+$z-layers: (
+  back: -10,
+  base: 1,
+  header: 100,
+  modal: 1000,
+  tooltip: 1100,
+);
+
+// == BREAKPOINTS ==
+$mobile: 480px;
+$mobile-2: 568px;
+$tablet: 768px;
+$tablet-2: 864px;
+$desktop: 1024px;
+$large: 1200px;
+
+$breakpoints: (
+  mobile: 480px,
+  tablet: 768px,
+  desktop: 1024px,
+  large: 1200px,
+);

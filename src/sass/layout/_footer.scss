@@ -1,0 +1,78 @@
+@use "../base/variables" as v;
+
+.footer {
+  background: v.$black;
+
+  .footer-container {
+    max-width: v.$container;
+    margin: 0 auto;
+    padding: v.$section-pad v.$space-3 v.$space-4 v.$space-3;
+
+    .footer-contato {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: space-evenly;
+      margin-bottom: v.$space-9;
+
+      @media (max-width: v.$desktop) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: v.$space-4;
+      }
+
+      .p-footer {
+        color: v.$gray-400;
+        max-width: 40ch;
+      }
+      ul {
+        @media (max-width: v.$tablet-2) {
+          display: flex;
+          flex-direction: column;
+          gap: v.$space-2;
+        }
+
+        a {
+          font-size: clamp(v.$font-18, 1.29rem + 1.59vw, v.$font-32);
+          font-weight: v.$weight-700;
+          color: v.$white;
+          line-height: v.$lh-relaxed;
+        }
+      }
+    }
+
+    .footer-direitos {
+      font-size: clamp(v.$font-14, 1.25rem + 0.45vw, v.$font-18);
+      color: v.$gray-700;
+
+      @media (max-width: v.$desktop) {
+        text-align: center;
+      }
+
+      .btn-voltar {
+        position: fixed;
+        bottom: v.$space-2;
+        right: v.$space-2;
+        padding: 0.6em 0.95em;
+        background: v.$gray-1100;
+        color: v.$gray-400;
+        border: 2px solid v.$gray-1200;
+        border-radius: v.$radius-sm;
+        z-index: v.$z-modal;
+        transition: background v.$duration-fast;
+
+        span {
+          font-size: clamp(v.$font-16, 1.31rem + 0.91vw, v.$font-24);
+          line-height: v.$lh-none;
+        }
+      }
+
+      :hover {
+        background: v.$gray-1000;
+        border-color: v.$gray-1100;
+        color: v.$white;
+      }
+    }
+  }
+}

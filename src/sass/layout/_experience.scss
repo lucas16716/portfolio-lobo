@@ -1,0 +1,121 @@
+@use "../base/variables" as v;
+
+.experiencia {
+  max-width: v.$container;
+  margin: 0 auto;
+  padding: v.$section-pad v.$space-3;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: v.$space-12;
+
+  @media (max-width: v.$tablet-2) {
+    grid-template-columns: 1fr;
+    gap: v.$space-3;
+  }
+
+  .h2-experiencia {
+    font-size: clamp(v.$font-40, 0.22rem + 11.82vw, v.$font-144);
+    color: v.$gray-300;
+    line-height: v.$lh-none;
+    text-transform: uppercase;
+    word-break: break-all;
+    max-width: 5ch;
+
+    @media (max-width: v.$tablet-2) {
+      max-width: initial;
+      text-transform: capitalize;
+      text-align: center;
+    }
+  }
+
+  .p-experiencia {
+    max-width: 40ch;
+    margin-bottom: v.$space-8;
+
+    @media (max-width: v.$tablet-2) {
+      max-width: initial;
+      margin-bottom: v.$space-3;
+      text-align: center;
+    }
+
+    strong {
+      color: v.$gray-1300;
+    }
+  }
+
+  .empresa-experiencia {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: v.$space-2;
+    margin-bottom: v.$space-3;
+    border: 2px solid v.$gray-200;
+    border-radius: v.$radius-sm;
+    background: v.$gray-100;
+
+    @media (max-width: v.$mobile-2) {
+      grid-template-columns: 1fr;
+    }
+
+    .ano-empresa {
+      position: absolute;
+      top: v.$space-2;
+      left: -8rem;
+      color: gray-1000;
+      font-size: clamp(v.$font-12, 1.13rem + 0.23vw, v.$font-14);
+      width: 60px;
+      text-align: right;
+
+      @media (max-width: v.$tablet-2) {
+        width: initial;
+        right: 10px;
+      }
+    }
+
+    .titulo-empresa {
+      margin-bottom: v.$space-1;
+      font-size: clamp(v.$font-14, 1.25rem + 0.45vw, v.$font-18);
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 4px;
+        height: 2rem;
+        left: -0.42rem;
+        background: linear-gradient(#b6f829, #67dd0a);
+      }
+    }
+
+    .cargo-empresa {
+      margin-bottom: v.$space-1;
+      font-size: clamp(v.$font-14, 1.25rem + 0.45vw, v.$font-18);
+      font-weight: v.$weight-700;
+      line-height: v.$lh-tight;
+    }
+
+    .p-empresa {
+      font-size: clamp(v.$font-12, 1.13rem + 0.23vw, v.$font-14);
+      line-height: v.$lh-tight;
+      max-width: 40ch;
+
+      @media (max-width: v.$mobile-2) {
+        margin-bottom: v.$space-2;
+      }
+    }
+
+    .habilidades-empresa {
+      display: flex;
+      flex-wrap: wrap;
+      gap: v.$space-1;
+      align-content: start;
+
+      li {
+        font-size: clamp(v.$font-12, 1.13rem + 0.23vw, v.$font-14);
+        background: v.$white;
+        border-radius: v.$radius-xs;
+        padding: v.$space-xs v.$space-1;
+      }
+    }
+  }
+}

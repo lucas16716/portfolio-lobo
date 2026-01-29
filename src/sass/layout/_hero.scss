@@ -1,0 +1,55 @@
+@use "../base/variables" as v;
+
+.hero {
+  max-width: v.$container;
+  margin: 0 auto;
+  padding: v.$section-pad v.$space-3;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: v.$space-12;
+
+  @media (max-width: v.$tablet) {
+    grid-template-columns: 1fr;
+    text-align: center;
+    place-items: center;
+    gap: v.$space-3;
+  }
+
+  .hero-perfil {
+    @media (max-width: v.$tablet) {
+      width: 50%;
+      height: auto;
+    }
+  }
+
+  h1 {
+    font-size: clamp(v.$font-32, 2.04rem + 3.64vw, v.$font-64);
+    margin-bottom: v.$gutter;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 12.8rem;
+      height: 12.8rem;
+      background: url(/src/assets/media/svg/detalhe.svg) no-repeat;
+      position: absolute;
+      top: -30px;
+      left: -40px;
+      z-index: v.$z-back;
+
+      @media (max-width: v.$desktop) {
+        background: url(/src/assets/media/svg/detalhe-2.svg) no-repeat;
+        top: -5px;
+        left: -18px;
+      }
+
+      @media (max-width: v.$mobile) {
+        background: url(/src/assets/media/svg/detalhe-3.svg) no-repeat;
+        top: 0;
+        left: -8px;
+      }
+    }
+  }
+}

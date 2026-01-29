@@ -1,0 +1,175 @@
+@use "../base/variables" as v;
+
+.formacao {
+  background: v.$gray-1300;
+
+  .formacao-container {
+    max-width: v.$container;
+    margin: 0 auto;
+    padding: v.$section-pad v.$space-3;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: v.$space-12;
+    position: relative;
+
+    @media (max-width: v.$tablet-2) {
+      grid-template-columns: 1fr;
+      gap: v.$space-3;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      background: url(/src/assets/media/svg/detalhe.svg) no-repeat center;
+      width: 13rem;
+      height: 10rem;
+      bottom: -50px;
+
+      @media (max-width: v.$tablet) {
+        left: 15px;
+      }
+
+      @media (max-width: v.$mobile) {
+        background: url(/src/assets/media/svg/detalhe-2.svg) no-repeat center;
+
+        left: -25px;
+      }
+    }
+
+    .h2-formacao {
+      font-size: clamp(v.$font-40, 0.22rem + 11.82vw, v.$font-144);
+      color: v.$black;
+      line-height: v.$lh-none;
+      text-transform: uppercase;
+      word-break: break-all;
+      max-width: 5ch;
+
+      @media (max-width: v.$tablet-2) {
+        max-width: initial;
+        text-transform: capitalize;
+        text-align: center;
+      }
+    }
+
+    .p-formacao {
+      color: v.$gray-600;
+      max-width: 40ch;
+      margin-bottom: v.$space-8;
+
+      @media (max-width: v.$tablet-2) {
+        max-width: initial;
+        margin-bottom: v.$space-3;
+        text-align: center;
+      }
+
+      strong {
+        color: v.$white;
+      }
+    }
+
+    .span-tipo-faculdade {
+      font-size: clamp(v.$font-12, 1.13rem + 0.23vw, v.$font-14);
+      color: v.$gray-600;
+      text-transform: uppercase;
+    }
+
+    .infos-faculdade {
+      display: flex;
+      flex-wrap: wrap;
+      gap: v.$space-3;
+      margin-bottom: v.$space-4;
+
+      .card {
+        flex: 1;
+        padding: v.$space-2;
+        border: 2px solid v.$black;
+        border-radius: v.$radius-sm;
+        background: v.$black;
+        display: grid;
+        grid-template-rows: 1fr 3fr 1fr;
+
+        .h3-faculdade {
+          font-size: clamp(v.$font-14, 1.25rem + 0.45vw, v.$font-18);
+          color: v.$white;
+          position: relative;
+
+          &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 0.4rem;
+            height: 2rem;
+            left: -22px;
+            background: linear-gradient(#b6f829, #67dd0a);
+          }
+        }
+
+        .p-faculdade {
+          color: v.$gray-600;
+          font-size: clamp(v.$font-14, 1.25rem + 0.45vw, v.$font-18);
+          justify-items: flex-end;
+        }
+      }
+    }
+
+    .diversos-formacao {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      gap: v.$space-5;
+
+      .tipo-formacao {
+        font-size: clamp(v.$font-12, 1.13rem + 0.23vw, v.$font-14);
+        font-weight: v.$weight-700;
+        color: v.$gray-600;
+        text-transform: uppercase;
+        margin-bottom: v.$space-2;
+        position: relative;
+
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 2.4rem;
+          height: 2.4rem;
+          top: -4px;
+          left: -32px;
+
+          @media (max-width: v.$tablet-2) {
+            display: none;
+          }
+        }
+      }
+
+      .cursos::before {
+        background: url(/src/assets/media/svg/cursos.svg) no-repeat;
+      }
+
+      .idiomas::before {
+        background: url(/src/assets/media/svg/idiomas.svg) no-repeat;
+      }
+
+      .curso-diversos {
+        :first-child {
+          margin-bottom: v.$space-1;
+        }
+
+        li {
+          font-size: clamp(v.$font-14, 1.25rem + 0.45vw, v.$font-18);
+          color: v.$white;
+
+          span {
+            color: v.$gray-700;
+          }
+        }
+      }
+
+      .curso {
+        li {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+}

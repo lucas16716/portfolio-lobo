@@ -1,0 +1,109 @@
+@use "variables" as v;
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: v.$font-reset;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  // max-width: v.$container;
+  // margin: 0 auto;
+  color: v.$gray-1300;
+  font-family:
+    "Fira Sans",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+
+  // Melhora a renderização das fontes
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: v.$weight-700;
+  line-height: v.$lh-tight;
+}
+
+// Acessibilidade: respeita quem reduz animações
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+//Seções: Container Padrão (Configuração opcional)
+.container {
+  max-width: v.$container;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: v.$gutter;
+  padding-right: v.$gutter;
+}
+
+//Configuração Padrão do Projeto Portfólio Lobo
+p {
+  font-size: clamp(v.$font-16, 1.31rem + 0.91vw, v.$font-24);
+  font-weight: v.$weight-400;
+  line-height: v.$lh-normal;
+  color: v.$gray-1000;
+}
