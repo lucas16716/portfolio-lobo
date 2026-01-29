@@ -1,6 +1,6 @@
 <h1 align="center">Portfólio Lobo 🐺</h1>
 
-<div align="center">
+<div align="left">
 
 [![License](https://img.shields.io/badge/Licença-MIT-blue)](/LICENSE)&nbsp;&nbsp;
 [![Status](https://img.shields.io/badge/Status-Finalizado-purple)]()
