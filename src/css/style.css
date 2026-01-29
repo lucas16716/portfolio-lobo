@@ -64,6 +64,13 @@ h6 {
   line-height: 1.25;
 }
 
+p {
+  font-size: clamp(1.6rem, 1.31rem + 0.91vw, 2.4rem);
+  font-weight: 400;
+  line-height: 1.5;
+  color: #525252;
+}
+
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
@@ -72,13 +79,6 @@ h6 {
     scroll-behavior: auto !important;
   }
 }
-p {
-  font-size: clamp(1.6rem, 1.31rem + 0.91vw, 2.4rem);
-  font-weight: 400;
-  line-height: 1.5;
-  color: #525252;
-}
-
 .header {
   max-width: 120rem;
   margin: 0 auto;
