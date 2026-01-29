@@ -22,7 +22,7 @@
 
     a {
       display: block;
-      padding: 1em;
+      padding: v.$space-2 v.$space-3;
       font-size: clamp(v.$font-14, 1.25rem + 0.45vw, v.$font-18);
       line-height: v.$lh-none;
 
@@ -31,8 +31,9 @@
         border: 2px solid v.$gray-200;
         border-radius: v.$radius-xs;
         width: 150px;
-        padding: 1.1em;
+        height: 55px;
         text-align: center;
+        line-height: 1;
       }
     }
   }
