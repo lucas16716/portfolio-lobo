@@ -22,11 +22,13 @@
 
     a {
       display: block;
-      padding: v.$space-1 v.$space-2;
-      font-size: v.$font-18;
+      padding: 1em;
+      font-size: clamp(v.$font-14, 1.25rem + 0.45vw, v.$font-18);
+      line-height: v.$lh-none;
 
       @media (max-width: v.$tablet) {
         background: v.$gray-100;
+        border: 2px solid v.$gray-200;
         border-radius: v.$radius-xs;
         width: 150px;
         text-align: center;
