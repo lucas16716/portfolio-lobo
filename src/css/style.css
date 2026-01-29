@@ -90,10 +90,11 @@ p {
 .header {
   max-width: 120rem;
   margin: 0 auto;
+  padding: 6.4rem 2.4rem;
+  padding: 4rem 2.4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 4rem 2.4rem;
 }
 @media (max-width: 768px) {
   .header {
@@ -452,6 +453,7 @@ p {
 .footer .footer-container {
   max-width: 120rem;
   margin: 0 auto;
+  padding: 6.4rem 2.4rem;
   padding: 6.4rem 2.4rem 3.2rem 2.4rem;
 }
 .footer .footer-container .footer-contato {

@@ -16,14 +16,6 @@ $gray-1100: #3d3d3d;
 $gray-1200: #292929;
 $gray-1300: #141414;
 
-// Escala Padrão (Alterar conforme o projeto)
-$primary: #007bff;
-$secondary: #6c757d;
-$success: #28a745;
-$warning: #ffc107;
-$danger: #dc3545;
-$info: #17a2b8;
-
 // == TIPOGRAFIA ==
 $font-reset: 62.5%; // 1rem = 10px
 
@@ -91,18 +83,6 @@ $radius-2xl: 2.4rem; // 24px
 $radius-3xl: 3.2rem; // 32px
 $radius-full: 9999px; // Para botões pílula ou fotos circulares
 
-// == SOMBRAS (SHADOWS) ==
-$shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
-$shadow-md:
-  0 4px 6px -1px rgba(0, 0, 0, 0.1),
-  0 2px 4px -1px rgba(0, 0, 0, 0.06);
-$shadow-lg:
-  0 10px 15px -3px rgba(0, 0, 0, 0.1),
-  0 4px 6px -2px rgba(0, 0, 0, 0.05);
-$shadow-xl:
-  0 20px 25px -5px rgba(0, 0, 0, 0.1),
-  0 10px 10px -5px rgba(0, 0, 0, 0.04);
-
 // == TRANSIÇÕES ==
 // Duração
 $duration-fastest: 0.1s; // Feedback instantâneo (ex: cliques)
@@ -125,14 +105,6 @@ $z-header: 100;
 $z-modal: 1000;
 $z-tooltip: 1100;
 
-$z-layers: (
-  back: -10,
-  base: 1,
-  header: 100,
-  modal: 1000,
-  tooltip: 1100,
-);
-
 // == BREAKPOINTS ==
 $mobile: 480px;
 $mobile-2: 568px;
@@ -140,10 +112,3 @@ $tablet: 768px;
 $tablet-2: 864px;
 $desktop: 1024px;
 $large: 1200px;
-
-$breakpoints: (
-  mobile: 480px,
-  tablet: 768px,
-  desktop: 1024px,
-  large: 1200px,
-);

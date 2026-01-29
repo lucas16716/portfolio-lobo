@@ -1,11 +1,11 @@
-@use "../base/variables" as v;
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
 
 .footer {
   background: v.$black;
 
   .footer-container {
-    max-width: v.$container;
-    margin: 0 auto;
+    @include m.container;
     padding: v.$section-pad v.$space-3 v.$space-4 v.$space-3;
 
     .footer-contato {

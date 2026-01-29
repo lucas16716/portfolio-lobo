@@ -1,12 +1,12 @@
-@use "../base/variables" as v;
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
 
 .header {
-  max-width: v.$container;
-  margin: 0 auto;
+  @include m.container;
+  padding: v.$space-5 v.$space-3;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: v.$space-5 v.$space-3;
 
   @media (max-width: v.$tablet) {
     flex-direction: column;

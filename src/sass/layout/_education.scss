@@ -1,12 +1,11 @@
-@use "../base/variables" as v;
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
 
 .formacao {
   background: v.$gray-1300;
 
   .formacao-container {
-    max-width: v.$container;
-    margin: 0 auto;
-    padding: v.$section-pad v.$space-3;
+    @include m.container;
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: v.$space-12;
