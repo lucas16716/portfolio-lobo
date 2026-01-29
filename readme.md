@@ -33,6 +33,7 @@ Além de replicar o layout fielmente, foram aplicadas técnicas modernas de CSS 
 - 🎨 **Variáveis & Design System:** Uso de mapas de cores, escalas de espaçamento (base 8px) e diversas variáveis organizadas em um arquivo de configuração (`_variables.scss`).
 - 📐 **Tipografia Fluida:** Implementação da função `clamp()` para fontes que se adaptam suavemente entre mobile e desktop, sem a necessidade excessiva de breakpoints, facilitando a responsividade.
 - 🧹 **Reset CSS Customizado:** Limpeza de estilos nativos para garantir consistência entre navegadores.
+- 🏠 **Botão de Voltar ao Topo:** Implementação do botão de voltar ao topo para melhor navegabilidade entre seções do site.
 
 <h2 id="tecnologias">TECNOLOGIAS E FERRAMENTAS</h2>
 
