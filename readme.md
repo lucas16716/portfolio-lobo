@@ -1,11 +1,5 @@
 <h1 align="center">Portfólio Lobo 🐺</h1>
 
-<div align="center">
-
-[![Status](https://img.shields.io/badge/Status-Finalizado-blue)]()
-
-</div>
-
 <p align="center">
   <a href="#projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#diferenciais-técnicos">Diferenciais</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -16,6 +10,8 @@
 ---
 
 <h2 id="projeto">PROJETO</h2>
+
+[![Status](https://img.shields.io/badge/Status-Finalizado-blue)]()
 
 Este projeto é uma **releitura técnica** do site "Portfólio Lobo", desenvolvido originalmente no curso de HTML e CSS para Iniciantes da **Origamid**.
 
