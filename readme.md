@@ -1,83 +1,83 @@
-<h1 align="center">Portfólio Lobo 🐺</h1>
+<div align="center">
 
-<div align="left">
+# Portfólio Lobo
 
-[![License](https://img.shields.io/badge/Licença-MIT-blue)](/LICENSE)&nbsp;&nbsp;
-[![Status](https://img.shields.io/badge/Status-Finalizado-purple)]()
+**Releitura técnica do projeto do curso de HTML e CSS da Origamid**
+
+*Recodificado do zero com SASS/SCSS, arquitetura modular e tipografia fluida*
+
+[![Status](https://img.shields.io/badge/status-concluído-e8e4de?style=flat-square&labelColor=3437e6&color=1c1b2e)]()&nbsp;
+[![Finalidade](https://img.shields.io/badge/finalidade-estudo-e8e4de?style=flat-square&labelColor=orange&color=1c1b2e)]()&nbsp;
+[![Licença](https://img.shields.io/badge/licença-MIT-e8e4de?style=flat-square&labelColor=ef4444&color=1c1b2e)](./LICENSE)
 
 </div>
 
 <p align="center">
   <a href="#projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#diferenciais-técnicos">Diferenciais</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#diferenciais">Diferenciais</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#estrutura-de-pastas">Arquitetura</a>
+  <a href="#estrutura">Estrutura</a>
 </p>
-
----
 
 <h2 id="projeto">PROJETO</h2>
 
-Este projeto é uma **releitura técnica** do site "Portfólio Lobo", desenvolvido originalmente no curso de HTML e CSS para Iniciantes da **Origamid**.
+Releitura técnica do site "Portfólio Lobo", desenvolvido originalmente no curso de HTML e CSS para Iniciantes da Origamid. Embora o curso ensine a construção com CSS nativo, o objetivo foi evoluir as habilidades técnicas recodificando o projeto do zero com SASS/SCSS — simulando um ambiente de desenvolvimento real com arquitetura modular e conceitos de design system.
 
-Embora o curso ensine a construção utilizando CSS nativo, o objetivo deste repositório foi **evoluir minhas habilidades técnicas**, codando o projeto do zero utilizando **SASS/SCSS**. Durante a codificação, simulei um ambiente de desenvolvimento real, aplicando conceitos de **Design Systems**, **arquitetura de pastas** organizada e **manutenibilidade** de código.
+🌐 [Acesse o projeto](https://lucas16716.github.io/portfolio-lobo/)
 
-🌐 **[Acesse o projeto online aqui](https://lucas16716.github.io/portfolio-lobo/)**
+<h2 id="diferenciais">DIFERENCIAIS IMPLEMENTADOS</h2>
 
-<h2 id="diferenciais-técnicos">DIFERENCIAIS IMPLEMENTADOS</h2>
+- **Arquitetura SASS modular** — partials organizados por responsabilidade e importados via `@use`
+- **Design system** — mapas de cores, escala de espaçamento base 8px e variáveis centralizadas em `_variables.scss`
+- **Tipografia fluida** — função `clamp()` para escala tipográfica responsiva sem media queries excessivas
+- **Reset CSS customizado** — limpeza de estilos nativos para consistência entre navegadores
+- **Botão de Voltar ao Topo** — implementação do botão de voltar ao topo para melhor navegabilidade entre seções do site.
 
-Além de replicar o layout fielmente, foram aplicadas técnicas modernas de CSS e SASS:
+<h2 id="tecnologias">TECNOLOGIAS</h2>
 
-- 🏗️ **Arquitetura SASS Modular:** O código não está em um único arquivo gigante. Foi utilizada a metodologia de **Partials** (`_header.scss`, `_footer.scss`, etc.) importados via `@use`, garantindo encapsulamento e organização.
-- 🎨 **Variáveis & Design System:** Uso de mapas de cores, escalas de espaçamento (base 8px) e diversas variáveis organizadas em um arquivo de configuração (`_variables.scss`).
-- 📐 **Tipografia Fluida:** Implementação da função `clamp()` para fontes que se adaptam suavemente entre mobile e desktop, sem a necessidade excessiva de breakpoints, facilitando a responsividade.
-- 🧹 **Reset CSS Customizado:** Limpeza de estilos nativos para garantir consistência entre navegadores.
-- 🏠 **Botão de Voltar ao Topo:** Implementação do botão de voltar ao topo para melhor navegabilidade entre seções do site.
+| Tecnologia | Uso |
+|---|---|
+| HTML5 | Estrutura semântica e acessível |
+| Sass (SCSS) | Arquitetura modular com partials, variáveis e mixins |
+| CSS Grid & Flexbox | Estruturação de layouts e alinhamentos |
+| Live Sass Compiler | Compilação em tempo real no VS Code |
+| Git/Github | Versionamento e hospedagem |
 
-<h2 id="tecnologias">TECNOLOGIAS E FERRAMENTAS</h2>
+<h2 id="estrutura">ESTRUTURA</h2>
 
-- **HTML5 Semântico →** estrutura semântica e acessível.
-- **SASS (SCSS) →** Pré-processador utilizado para Aninhamentos, Variáveis, Mixins e outros fundamentos.
-- **CSS Grid & Flexbox →** Para estruturação de layouts e alinhamentos em grade.
-- **Live Sass Compiler →** Extensão do VS Code utilizada para compilação em tempo real.
-- **Git/GitHub →** Versionamento e hospedagem.
-
----
-
-<h2 id="estrutura-de-pastas">ESTRUTURAÇÃO DO PROJETO</h2>
-
-A organização das pastas segue uma adaptação da **Arquitetura 7-1 do SASS**, separando configurações, base e layouts:
-
-```bash
+```
 📁 portfolio-lobo
-├── index.html                       # Estrutura principal
+├── index.html                       → Estrutura principal
 ├── src/
-│   ├── assets/                      # Imagens e ícones: ico, img e svg
-│   ├── css/                         # CSS Compilado
+│   ├── assets/                      → Imagens, ícones e SVGs
+│   ├── css/                         → CSS compilado
 │   │   └── style.css
 │   └── sass/
-│       ├── abstracts/               # Arquivos de configuração: variáveis e mixins
+│       ├── abstracts/               → Arquivos de configuração: variáveis e mixins
 │       │   ├── _mixins.scss
 │       │   └── _variables.scss
-│       ├── base/                    # Arquivos de Reset / Estilos Fundamentais
+│       ├── base/                    → Arquivos de Reset / Estilos Fundamentais
 │       │   └── _global.scss
-│       ├── layout/                  # Arquivos de estilização da estrutura organizado em Partials
+│       ├── layout/                  → Arquivos de estilização da estrutura organizado em Partials
 │       │   ├── _header.scss
 │       │   ├── _hero.scss
 │       │   ├── _experience.scss
 │       │   ├── _education.scss
 │       │   └── _footer.scss
-│       └── style.scss               # Arquivo Principal (Gerenciador de imports)
-├── README.md                        # Documentação do projeto
-└── LICENSE                          # Licença MIT
+│       └── style.scss               → Entry Point
+├── README.md                        
+└── LICENSE 
 ```
 
 ---
 
-<h2>📝 LICENÇA</h2>
+<h2>LICENÇA</h2>
 
-<p>Este projeto está licenciado sob a licença MIT. Confira os detalhes na documentação oficial.</p>
+Este projeto está licenciado sob a licença MIT, confira os detalhes na documentação oficial.
 
-<h2>🧑🏻‍💻 AUTOR </h2>
+O design original pertence à [Origamid](https://www.origamid.com) e foi utilizado para fins de estudo.
 
-<p>Desenvolvido por <a href="https://bio.site/lucascode">Lucas Code</a>, com design original da Origamid, para fins de desenvolvimento técnico.</p>
+<h2>AUTOR</h2>
+
+Desenvolvido por [Lucas Couto](https://linkedin.com/in/lucas-coutoti).  
+Conheça meu trabalho em [Lucas Code](https://bio.site/lucascode).
